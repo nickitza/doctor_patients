@@ -10,7 +10,7 @@
       )
 
     Appointment.create(
-      date: Faker::Date.forward(25)
+      date: Faker::Date.forward(25),
       doctor_id: doctor.id,
       patient_id: patient.id
       )

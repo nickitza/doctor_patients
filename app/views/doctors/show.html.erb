@@ -1,4 +1,5 @@
 <h1>Viewing Dr. <%= @doctor.last_name%> </h1>
 <hr>
-
-<li><%= link_to "Remove Doctor", doctor_path(@doctor), method: :delete %></li>
+<br />
+<%= link_to "View Appointments", doctor_appointments_path(@doctor), class: "ui button primary"%>
+<%= link_to "Remove Doctor", doctor_path(@doctor), method: :delete, class: "ui button red inverted" %>
