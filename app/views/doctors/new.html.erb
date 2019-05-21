@@ -1,2 +1,9 @@
-<h1>Doctors#new</h1>
-<p>Find me in app/views/doctors/new.html.erb</p>
+<h1>Add New Doctor</h1>
+<hr />
+<%= form_with(model: @doctor, local: true, class: "ui form") do |f| %>
+<div class = "field">
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name, required: true, autofocus: true, placeholder: "Doctor's Last Name" %>
+</div>
+<%=f.submit "Add Doctor", class: "ui button green inverted" %>
+<%end%>
